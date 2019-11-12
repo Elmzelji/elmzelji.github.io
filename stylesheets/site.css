@@ -1,0 +1,25 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+@media (min-width:320px)  {
+  
+}
+@media (min-width:480px)  {
+
+}
+@media (min-width:640px)  {
+  .bg-none {
+    background-image: none !important;
+  }
+}
+@media (min-width:801px)  {
+  .bg-none {
+    background-image: url('/images/illustration.svg') !important;
+    background-position: right 60px top !important;
+  }
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
