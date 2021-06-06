@@ -32,4 +32,19 @@ window.onload = function () {
             ]
         }
     });
+
+    let contact = document.getElementById('contact');
+    if(contact) {
+        let contactVue = new Vue({
+            el: '#contact',
+            data: {
+                email: 'youssefelmzelji@gmail.com'
+            },
+            methods: {
+                showMail() {
+                    this.$refs.emailSection.innerHTML = "<code class='font-semibold border border-gray-800 text-gray-800 p-2'><span class='mr-2'>👋🏽</span>"+this.email+"</code>";
+                }
+            }
+        });
+    }
 }
