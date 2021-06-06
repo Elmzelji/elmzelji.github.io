@@ -1,338 +1,191 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Use the title from a page's frontmatter if it has one -->
-    <title>Youssef ELMZELJI - Web designer & developer and technopreneur.</title>
-
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-    <link rel="manifest" href="/images/site.webmanifest">
-
-    <link href="/styles.css" rel="stylesheet" />
-    <script src="/application.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
-
-  </head>
-  <body class="font-sans leading-normal pt-4 bg-transparent bg-none bg-no-repeat sm:bg-auto sm:bg-right-top">
-
-    <div id="app">
-      <header class="container mx-auto">
-        <div class="px-12 sm:px-16 mx-auto px-4">
-          <div class="flex items-center justify-between py-4">
-            <div>
-              <a href="/">Youssef <strong>Elmzelji.</strong></a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./assets/css/main.min.css">
+    <link rel="stylesheet" href="./assets/css/tailwind.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youssef ELMZELJI - Wordpress Developer & Technical SEO Specialist</title>
+</head>
+<body>
+    <nav class="bg-gray-800">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div class="relative flex items-center justify-between h-16">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                <!-- Mobile menu button-->
+                <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
             </div>
-
-            <div class="hidden sm:flex sm:items-center">
-              <a href="/" class="text-gray-800 text-sm font-semibold hover:text-proto_blue-800 mr-4" >Home</a>
-
-              <a href="#about" class="text-gray-800 text-sm font-semibold hover:text-proto_blue-800 mr-4" >About</a>
-
-              <a href="#services" class="text-gray-800 text-sm font-semibold hover:text-proto_blue-800 mr-4" >Process</a>
-
-              <a href="#work" class="text-gray-800 text-sm font-semibold hover:text-proto_blue-800 mr-4" >Work</a>
+            <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+                <div class="flex-shrink-0 flex items-center">
+                    <img class="block lg:hidden h-8 w-auto" src="./assets/img/initials-white.svg" alt="Youssef ELMZELJI Logo">
+                    <img class="hidden lg:block h-8 w-auto" src="./assets/img/initials-white.svg" alt="Youssef ELMZELJI Logo">
+                </div>
+                <div class="hidden sm:block sm:ml-6">
+                    <div class="flex space-x-4">
+                        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                        <a href="/about.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="/projects.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                        <a href="/blog.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Blog</a>
+                    </div>
+                </div>
             </div>
-
-            <div class="hidden sm:flex sm:items-center">
-
-
-              <div class="flex justify-center">
-                <a href="https://www.linkedin.com/messaging/compose/?recipient=elmzelji" class="w-full mb-6 sm:w-auto sm:ml-6 flex items-center px-6 py-2 font-light border border-proto_blue-700 bg-proto_blue-700 text-white rounded-lg hover:bg-proto_blue-800 shadow-md">
-
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-current text-white" viewBox="0 0 20 20"><path d="M18.174 1.826c-1.102-1.102-2.082-.777-2.082-.777L7.453 9.681 6 14l4.317-1.454 8.634-8.638s.324-.98-.777-2.082zm-7.569 9.779l-.471.47-1.473.5a2.216 2.216 0 00-.498-.74 2.226 2.226 0 00-.74-.498l.5-1.473.471-.47s.776-.089 1.537.673c.762.761.674 1.538.674 1.538zM16 17H3V4h5l2-2H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2v-7l-2 2v5z"/></svg>
-                    <span class="ml-2">Contact me</span>
-
-                  </a>
-              </div>
-
-
-            </div>
-
-            <div @click="isOpen = !isOpen" class="sm:hidden cursor-pointer">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-current text-proto_blue-900 w-6">
-
-                <path v-if="isOpen"
-                  d="M14.348 14.849a1.2 1.2 0 01-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 11-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 111.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 111.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 010 1.698z" />
-
-                <path v-if="!isOpen"
-                  d="M16.4 9H3.6c-.552 0-.6.447-.6 1 0 .553.048 1 .6 1h12.8c.552 0 .6-.447.6-1 0-.553-.048-1-.6-1zm0 4H3.6c-.552 0-.6.447-.6 1 0 .553.048 1 .6 1h12.8c.552 0 .6-.447.6-1 0-.553-.048-1-.6-1zM3.6 7h12.8c.552 0 .6-.447.6-1 0-.553-.048-1-.6-1H3.6c-.552 0-.6.447-.6 1 0 .553.048 1 .6 1z" />
-              </svg>
-            </div>
-          </div>
-
-
-          <div v-if="isOpen" class="block sm:hidden bg-white border-t-2 py-2">
-            <div class="flex flex-col">
-              <button class="text-left text-proto_blue-900 text-sm font-semibold hover:text-proto_blue-800 mb-4" >Home</button>
-
-              <button class="text-left text-proto_blue-900 text-sm font-semibold hover:text-proto_blue-800 mb-4" >About</button>
-
-              <button class="text-left text-proto_blue-900 text-sm font-semibold hover:text-proto_blue-800 mb-4" >Process</button>
-
-              <button class="text-left text-proto_blue-900 text-sm font-semibold hover:text-proto_blue-800 mb-4" >Work</button>
-
-              <div class="flex justify-between items-center border-t-2 pt-2">
-                <a href="https://www.linkedin.com/messaging/compose/?recipient=elmzelji" class="w-full mt-2 sm:mt-0 sm:block px-6 py-2 font-light border border-proto_blue-700 bg-proto_blue-700 text-white rounded-lg hover:bg-proto_blue-800 shadow-md">Contact me</a>
-              </div>
+            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+      
+                <!-- Profile dropdown -->
+                <div class="ml-3 relative">
+                    <div>
+                        <button class="bg-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white flex items-center justify-between" id="user-menu" aria-haspopup="true">
+                            <span class="mr-2">Let's talk</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="fill-current w-5" viewBox="0 0 20 20"><path d="M9.163 4.516c.418.408 4.502 4.695 4.502 4.695a1.095 1.095 0 010 1.576s-4.084 4.289-4.502 4.695c-.418.408-1.17.436-1.615 0-.446-.434-.481-1.041 0-1.574L11.295 10 7.548 6.092c-.481-.533-.446-1.141 0-1.576.445-.436 1.197-.409 1.615 0z"/></svg>
+                        </button>
+                    </div>
+                </div>
             </div>
           </div>
         </div>
-      </header>
-
-      <main>
-        <!-- Hero -->
-<section id="about" class="container mx-auto px-16">
-  <div class="mt-24">
-    <h1 class="text-center sm:text-left text-4xl text-proto_blue-800">Create a new generation
-      <br>
-      website for your business.</h1>
-    <p class="text-lg font-light text-center sm:text-justify text-proto_gray-400 sm:w-5/12 leading-relaxed mt-6">Making the world “better” is my goal.<br>
-      I have the opportunity to create things that make people’s lives easier, more efficient, or happier.
-    </p>
-    <div class="mt-6 px-0 flex flex-col sm:flex-row justify-between sm:justify-start">
-
-      <div class="flex justify-center">
-        <a href="https://www.linkedin.com/messaging/compose/?recipient=elmzelji" class="w-full mb-6 sm:w-auto flex items-center px-6 py-2 font-light border border-proto_green-300 bg-proto_green-300 text-white rounded-lg hover:bg-proto_blue-800 shadow-md">
-
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-current text-white" viewBox="0 0 20 20"><path d="M18.174 1.826c-1.102-1.102-2.082-.777-2.082-.777L7.453 9.681 6 14l4.317-1.454 8.634-8.638s.324-.98-.777-2.082zm-7.569 9.779l-.471.47-1.473.5a2.216 2.216 0 00-.498-.74 2.226 2.226 0 00-.74-.498l.5-1.473.471-.47s.776-.089 1.537.673c.762.761.674 1.538.674 1.538zM16 17H3V4h5l2-2H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2v-7l-2 2v5z"/></svg> <span class="ml-2">Contact me</span>
-
-        </a>
-      </div>
-
-      <div class="flex justify-center">
-        <a href="/#work" class="w-full mb-6 sm:w-auto sm:ml-6 flex items-center px-6 py-2 font-light border border-proto_blue-600 bg-proto_blue-600 text-white rounded-lg hover:bg-proto_blue-800 shadow-md">
-
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-current text-white" viewbox="0 0 20 20">
-              <path
-                d="M5.274 6.915c.2 0 .394.029.576.086a15.774 15.774 0 012.283-2.1 1.954 1.954 0 01.048-1.076A14.407 14.407 0 005.17 2.171a9.25 9.25 0 00-2.582 2.381c.519.92 1.136 1.777 1.838 2.557.256-.124.543-.194.848-.194zM3.316 8.872c0-.275.058-.537.159-.773A15.91 15.91 0 011.78 5.87a9.165 9.165 0 00-.98 4.131 9.16 9.16 0 001.295 4.705 15.614 15.614 0 011.62-4.652 1.947 1.947 0 01-.399-1.182zm6.72-6.383c.517 0 .985.201 1.336.529a15.578 15.578 0 013.215-.992A9.154 9.154 0 0010 .8a9.167 9.167 0 00-3.236.588 15.76 15.76 0 012.277 1.375c.292-.174.631-.274.995-.274zm2.926 9.219a1.94 1.94 0 01.509-.656 14.336 14.336 0 00-2.672-4.803 1.956 1.956 0 01-1.901-.211 14.343 14.343 0 00-1.964 1.803 1.93 1.93 0 01.207 1.617 14.252 14.252 0 005.821 2.25zm2.539 2.643a15.872 15.872 0 01-.081 3.082 9.216 9.216 0 003.347-4.639 15.39 15.39 0 01-2.181.365 1.958 1.958 0 01-1.085 1.192zm-2.997-1.327a15.643 15.643 0 01-6.21-2.484 1.953 1.953 0 01-1.423.248 14.219 14.219 0 00-1.599 5.484 9.203 9.203 0 003.145 2.205 15.662 15.662 0 016.087-5.453zm3.672-9.843a14.296 14.296 0 00-4.193 1.068 1.946 1.946 0 01-.191 1.056 15.68 15.68 0 012.969 5.291 1.961 1.961 0 011.77 1.195c.886-.09 1.748-.26 2.578-.504a9.178 9.178 0 00-2.933-8.106zm-2.687 10.888a14.291 14.291 0 00-5.723 4.856A9.187 9.187 0 0010 19.2a9.165 9.165 0 003.882-.859c.19-.928.29-1.887.29-2.869 0-.355-.016-.707-.043-1.055a1.923 1.923 0 01-.64-.348z"/>
-            </svg>
-
-            <span class="ml-2">See my work</span>
-
-          </a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- Process -->
-<section id="services" class="container mx-auto px-6 sm:px-16 mt-24 sm:mt-64 text-center flex flex-col justify-center items-center h-full">
-  <h1 class="text-proto_gray-400 text-sm">HOW I WORK</h1>
-  <h2 class="text-proto_blue-900 text-2xl">Three Simple Steps That I Use On Every Project.</h2>
-
-  <div class="p-6 sm:p-12 flex flex-col sm:flex-row mt-12 justify-center items-center">
-    <div class="w-full sm:w-1/3 p-4">
-      <h1 class="text-proto_blue-900 text-lg font-semibold mb-2">Research</h1>
-      <p class="text-proto_gray-400 text-base leading-relaxed">Before I start crafting, I need to know exactly what you and your customers need.</p>
-    </div>
-
-    <div class="w-full sm:w-1/3 p-4">
-      <h1 class="text-proto_blue-900 text-lg font-semibold mb-2">Design</h1>
-      <p class="text-proto_gray-400 text-base leading-relaxed">Transforming what I’ve gathered in Research process, to a beautifully designed UI’s</p>
-    </div>
-
-    <div class="w-full sm:w-1/3 p-4">
-      <h1 class="text-proto_blue-900 text-lg font-semibold mb-2">Code</h1>
-      <p class="text-proto_gray-400 text-base leading-relaxed">Converting the designed ui to a pixel perfect code, with all it’s glory.</p>
-    </div>
-  </div>
-
-  <div class="">
-    <img class="mt-12" src="/images/wework.svg" width="500"/>
-  </div>
-</section>
-
-<!-- Testimonials -->
-<section class="clients">
-
-  <div class="w-full bg-proto_green-400 w-full flex flex-col justify-center items-center mt-16 px-6 py-16 sm:py-16 sm:px-16" style="background-image: url('/images/shape.svg'); background-position: right top;">
-    <h1 class="text-white text-4xl text-center">Let them speak for me !</h1>
-    <p class="text-white font-light text-center">Client’s contentment is my paramount importance for me.<br>
-      Take a look at what my clients have to say about me.</p>
-
-    <div class="flex flex-col sm:flex-row mt-6">
-
-
-        <div class="shadow-md p-8 sm:w-1/3 bg-white rounded-lg m-4" style="box-sizing: border-box;">
-          <p class="text-proto_gray-300 mb-12 text-sm text-center">Youssef est un passionné du web et parmi les développeurs compétents avec qui j’ai travaillé. Je vous recommande les compétences de youssef</p>
-
-          <a href="https://www.linkedin.com/in/elbasrhiri" class="flex items-center">
-            <img class="rounded-full w-8 h-8" src="https://pbs.twimg.com/profile_images/855463277819768834/PNXR_nqc_400x400.jpg" alt="Anouar EL Basrhiri">
-            <h3 class="ml-4">Anouar EL Basrhiri,</br> <span class="text-sm">Directeur général</span><br><span class="text-sm font-semibold">TMS Consulting</span></h3>
-          </a>
-
+      
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="/about.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="/projects.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+                <a href="/blog.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Blog</a>
+            </div>
         </div>
-        <div class="shadow-md p-8 sm:w-1/3 bg-white rounded-lg m-4" style="box-sizing: border-box;">
-          <p class="text-proto_gray-300 mb-12 text-sm text-center">Youssef is very skilled in web development ( wordpress, php...) and have a good ability to work in Agile mode. A professional to recommend to any client who wants to develop a product.</p>
+    </nav>
 
-          <a href="https://www.linkedin.com/in/oussamasbai/" class="flex items-center">
-            <img class="rounded-full w-8 h-8" src="https://www.rekrute.com/user/photo.jpg?token=c8a009b2dae54191b0002f7ca643d8bd" alt="Oussama Sbai">
-            <h3 class="ml-4">Oussama Sbai,</br> <span class="text-sm">Operational Risk Manager</span><br><span class="text-sm font-semibold">Société Générale</span></h3>
-          </a>
-
-        </div>
-
-
-      </div>
-
-      <div class="flex justify-center">
-        <a href="https://www.linkedin.com/in/elmzelji" class="w-full mb-6 sm:w-auto sm:ml-6 flex items-center px-6 py-2 font-light border border-proto_blue-600 bg-proto_blue-600 text-white rounded-lg hover:bg-proto_blue-800 shadow-md">
-
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-current text-white" viewbox="0 0 20 20">
-              <path d="M0 0h24v24H0zm15.35 6.41l-1.77-1.77c-.2-.2-.51-.2-.71 0L6 11.53V14h2.47l6.88-6.88c.2-.19.2-.51 0-.71z" fill="none"/><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 14v-2.47l6.88-6.88c.2-.2.51-.2.71 0l1.77 1.77c.2.2.2.51 0 .71L8.47 14H6zm12 0h-7.5l2-2H18v2z"/>
-            </svg>
-
-            <span class="ml-2">See more</span>
-          </a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- My work -->
-<section id="work">
-
-  <div class="px-6 sm:px-16 mt-16 flex flex-col justify-center items-center">
-    <h1 class="text-center text-proto_gray-400 text-sm">PORTFOLIO</h1>
-    <h2 class="text-center text-proto_blue-900 text-2xl">Some of my works that I'm proud of.</h2>
-
-    <div class="flex flex-col sm:flex-row p-6">
-
-
-          <a href="https://dribbble.com/shots/7223418-YouShoot-mobile-app-design" class="m-2 hover:bg-proto_blue-900">
-            <img class="rounded-lg" src="https://cdn.dribbble.com/users/999844/screenshots/7223418/media/dc7d9d1f9ec6c7ddadef93c9a62843cd.jpg" alt="">
-          </a>
-          <a href="https://dribbble.com/shots/7223396-Whizzo-profile-design-ui" class="m-2 hover:bg-proto_blue-900">
-            <img class="rounded-lg" src="https://cdn.dribbble.com/users/999844/screenshots/7223396/media/c4c8122443c874e1eefe6f98b0ecd4c4.jpg" alt="">
-          </a>
-          <a href="https://dribbble.com/shots/7223356-Whizzo-Pricing-table-design" class="m-2 hover:bg-proto_blue-900">
-            <img class="rounded-lg" src="https://cdn.dribbble.com/users/999844/screenshots/7223356/media/5023242a0e9ad2b88c5f2a0e7edac115.jpg" alt="">
-          </a>
-
-    </div>
-
-    <div class="flex flex-col sm:flex-row p-6 pt-0">
-
-          <a href="https://dribbble.com/shots/7223351-Whizzo-Signup-process" class="m-2 hover:bg-proto_blue-900">
-            <img class="rounded-lg" src="https://cdn.dribbble.com/users/999844/screenshots/7223351/media/98adf11ff0b9a9bd7308f05ddf32797e.jpg" alt="">
-          </a>
-          <a href="https://dribbble.com/shots/7349252-Restogrub-shopify-for-restaurants" class="m-2 hover:bg-proto_blue-900">
-            <img class="rounded-lg" src="https://cdn.dribbble.com/users/999844/screenshots/7349252/media/8f54dfb95f35ef8b1d44670c44100c9d.jpg" alt="">
-          </a>
-          <a href="https://dribbble.com/shots/7223327-Whizzo-Personal-Branding-web-app-design" class="m-2 hover:bg-proto_blue-900">
-            <img class="rounded-lg" src="https://cdn.dribbble.com/users/999844/screenshots/7223327/media/6d3e98d42f7c2d86f9d9b70d152d4edd.jpg" alt="">
-          </a>
-
-    </div>
-
-  </div>
-  <div class="flex justify-center">
-    <a href="https://dribbble.com/Elmzelji" class="w-auto mb-6 sm:ml-6 flex items-center px-6 py-2 font-light border border-proto_blue-600 bg-proto_blue-600 text-white rounded-lg hover:bg-proto_blue-800 shadow-md">
-
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-current text-white" viewbox="0 0 20 20">
-          <path
-            d="M5.274 6.915c.2 0 .394.029.576.086a15.774 15.774 0 012.283-2.1 1.954 1.954 0 01.048-1.076A14.407 14.407 0 005.17 2.171a9.25 9.25 0 00-2.582 2.381c.519.92 1.136 1.777 1.838 2.557.256-.124.543-.194.848-.194zM3.316 8.872c0-.275.058-.537.159-.773A15.91 15.91 0 011.78 5.87a9.165 9.165 0 00-.98 4.131 9.16 9.16 0 001.295 4.705 15.614 15.614 0 011.62-4.652 1.947 1.947 0 01-.399-1.182zm6.72-6.383c.517 0 .985.201 1.336.529a15.578 15.578 0 013.215-.992A9.154 9.154 0 0010 .8a9.167 9.167 0 00-3.236.588 15.76 15.76 0 012.277 1.375c.292-.174.631-.274.995-.274zm2.926 9.219a1.94 1.94 0 01.509-.656 14.336 14.336 0 00-2.672-4.803 1.956 1.956 0 01-1.901-.211 14.343 14.343 0 00-1.964 1.803 1.93 1.93 0 01.207 1.617 14.252 14.252 0 005.821 2.25zm2.539 2.643a15.872 15.872 0 01-.081 3.082 9.216 9.216 0 003.347-4.639 15.39 15.39 0 01-2.181.365 1.958 1.958 0 01-1.085 1.192zm-2.997-1.327a15.643 15.643 0 01-6.21-2.484 1.953 1.953 0 01-1.423.248 14.219 14.219 0 00-1.599 5.484 9.203 9.203 0 003.145 2.205 15.662 15.662 0 016.087-5.453zm3.672-9.843a14.296 14.296 0 00-4.193 1.068 1.946 1.946 0 01-.191 1.056 15.68 15.68 0 012.969 5.291 1.961 1.961 0 011.77 1.195c.886-.09 1.748-.26 2.578-.504a9.178 9.178 0 00-2.933-8.106zm-2.687 10.888a14.291 14.291 0 00-5.723 4.856A9.187 9.187 0 0010 19.2a9.165 9.165 0 003.882-.859c.19-.928.29-1.887.29-2.869 0-.355-.016-.707-.043-1.055a1.923 1.923 0 01-.64-.348z"/>
-        </svg>
-
-        <span class="ml-2">See more</span>
-      </a>
-  </div>
-</section>
-
-<section id="contact" class="p-20 bg-proto_blue-900 bg-no-repeat flex flex-col sm:flex-row justify-between items-center" style="background-image: url('/images/shape2.svg'); background-position: left center;">
-
-  <h1 class="text-center sm:text-left text-white text-xl font-light">There’s no such thing as a bad idea!<br>
-    Put your email and I will contact you.</h1>
-
-  <div class="flex">
-
-    <form method="post" action="https://gmail.us5.list-manage.com/subscribe/post?u=2e55385f69454ac519487f756&amp;id=0929675339"class="m-4 flex">
-      <input class="w-48 sm:w-3/2 focus:outline-none rounded-l-lg px-4 py-2 border-t mr-0 border-b border-l text-gray-800 border-proto_blue-500 bg-white" placeholder="your@mail.com" name="EMAIL" required/>
-      <button type="submit" value="Subscribe" name="subscribe" class="hover:bg-proto_blue-800 px-8 rounded-r-lg bg-proto_blue-500 text-gray-800 font-bold p-4 uppercase border-proto_blue-500 border-t border-b border-r">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-current text-white w-4">
-          <path d="M0 0l20 10L0 20V0zm0 8v4l10-2L0 8z" /></svg>
-      </button>
-    </form>
-
-  </div>
-</section>
-
-
-
-      </main>
-
-   
-      <footer>
-        <div class="py-16 px-12 xs:px-16 sm:px-24 bg-no-repeat flex flex-col sm:flex-row justify-between" style="background-image: url('/images/fotter_bg.svg'); background-position: right bottom;">
-          <div class="">
-            <a style="font-size:19px;" href="/">Youssef <strong>Elmzelji.</strong></a>
-            <p class="text-sm text-proto_gray-400 mt-4 text-justify">My mission is to convert your ideas,<br>
-              to something that just works. I love<br>
-              to learn, collaborate and create amazing<br>
-              stuff.</p>
-          </div>
-
-          <div class="flex flex-col mt-6 sm:mt-0">
-            <h2 class="font-semibold mb-6">Useful links</h2>
-            <a href="/" class="text-left text-sm text-proto_gray-400 font-normal hover:text-proto_blue-900 mb-2">Home</a>
-
-            <a href="#about" class="text-left text-sm text-proto_gray-400 font-normal hover:text-proto_blue-900 mb-2">About</a>
-
-            <a href="#services" class="text-left text-sm text-proto_gray-400 font-normal hover:text-proto_blue-900 mb-2">Process</a>
-
-            <a href="#work" class="text-left text-sm text-proto_gray-400 font-normal hover:text-proto_blue-900 mb-2">Portfolio</a>
-
-          </div>
-
-          <div class="flex flex-col mt-6 sm:mt-0">
-            <h2 class="font-semibold mb-6">Need Help?</h2>
-            <a class="text-sm text-proto_gray-400 font-normal hover:text-proto_blue-900 mb-2" href="#">FAQ - Comming soon</a>
-            <a class="text-sm text-proto_gray-400 font-normal hover:text-proto_blue-900 mb-2" href="#">Privacy - Comming soon</a>
-            <a class="text-sm text-proto_gray-400 font-normal hover:text-proto_blue-900 mb-2" href="#">Policy - Comming soon</a>
-            <a class="text-sm text-proto_gray-400 font-normal hover:text-proto_blue-900" href="#">Terms - Comming soon</a>
-          </div>
-
-          <div class="flex flex-col mt-6 sm:mt-0">
-            <h2 class="font-semibold mb-6">Contact</h2>
-            <a class="text-sm text-proto_gray-400 font-normal hover:text-proto_blue-900 mb-2" href="https://www.facebook.com/El.mzelji">Facebbok</a>
-            <a class="text-sm text-proto_gray-400 font-normal hover:text-proto_blue-900 mb-2" href="https://www.linkedin.com/in/elmzelji/">Linkedin</a>
-            <a class="text-sm text-proto_gray-400 font-normal hover:text-proto_blue-900 mb-2" href="https://twitter.com/Elmzelji">Twitter</a>
-            <a class="text-sm text-proto_gray-400 font-normal hover:text-proto_blue-900 mb-2" href="https://dribbble.com/Elmzelji">Dribbble</a>
-            <a class="text-sm text-proto_gray-400 font-normal hover:text-proto_blue-900" href="https://www.behance.net/elmzelji">Behance</a>
-          </div>
-
-        </div>
-
-        <div class="border-proto_gray-500 border-t flex justify-between px-16 sm:px-24 py-6">
-          <p class="hidden sm:inline text-sm font-light text-proto_gray-400">Copyright &copy; 2019</p>
-          <p class="text-sm font-light text-proto_gray-400">
-            <a href="https://www.linkedin.com/in/elmzelji">Youssef ELMZELJI</a>  All rights reserved
-          </p>
-        </div>
-      </footer>
-    </div>
+    <section class="bg-gray-800">
+        <div class="container mx-auto w-full">
+            <div class="w-full md:w-1/2 mx-auto px-4 py-24">
+                <h1 class="text-4xl text-white text-center font-semibold">Youssef Elmzelji</h1>
+                <p class="text-white text-xl text-center mt-2">Casablanca based freelancer, I create bespoke websites to help people and companies go further online.</p>
+            </div>
+            <div class="flex flex-col md:flex-row">
+                <div class="hover:shadow-xl cursor-pointer bg-white hover:bg-gray-800 hover:text-white w-full md:w-1/3 p-4">
+                    <h2 class="text-lg font-semibold">👨🏽‍💻 Custom WordPress Theme Development</h2>
+                    <p style="font-weight: 500;" class="text-sm mt-2">Wordpress CMS is a user-friendly administrative area allowing you to easily edit your website's content.</p>
+                    <a href="#wp-dev" class="underline mt-1 text-sm">Learn more</a>
+                </div>
     
+                <div class="hover:shadow-xl cursor-pointer bg-white hover:bg-gray-800 hover:text-white w-full md:w-1/3 p-4">
+                    <h2 class="text-lg font-semibold">⚙️ Custom WordPress Plugin Development</h2>
+                    <p style="font-weight: 500;" class="text-sm mt-2">Existing plugins don't deliver the unique functionality that your website requires? Let me step in, and I'll create it for you.</p>
+                    <a href="#wp-plugin-dev" class="underline mt-1 text-sm">Learn more</a>
+                </div>
+    
+                <div class="hover:shadow-xl cursor-pointer bg-white hover:bg-gray-800 hover:text-white w-full md:w-1/3 p-4">
+                    <h2 class="text-lg font-semibold">🎯 Technical SEO</h2>
+                    <p style="font-weight: 500;" class="text-sm mt-2">Creating good content doesn’t matter anymore if nobody can find or see it</p>
+                    <a href="#tech-seo" class="underline mt-1 text-sm">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <script>
-      const App = new Vue({
-        el: '#app',
-        data: function() {
-          return {
-            isOpen: false,
-            year_now: new Date().getFullYear(),
-          }
-        },
-      })
-    </script>
+    <section class="my-12">
+        <h2 style="font-weight: 700;" class="font-semibold text-2xl text-center">My clients include</h2>
+        <div class="flex flex-wrap items-center justify-center">
+            <img class="img-brand m-4" src="./assets/img/brands/blm.png" alt="Bright Leads Media">
+            <img class="img-brand m-4" src="./assets/img/brands/restogrub.png" alt="Restogrub">
+            <img class="img-brand m-4" src="./assets/img/brands/the digital haul.jpg" alt="TheDigitalHaul">
+            <img class="img-brand m-4" src="./assets/img/brands/whizzo.png" alt="Whizzo">
+            <img class="img-brand m-4" src="./assets/img/brands/alasselmall.png" alt="Alassel mall">
+            <img class="img-brand m-4" src="./assets/img/brands/prototech_space.jpg" alt="Prototech Space">
+            <img class="img-brand m-4" src="./assets/img/brands/backyardplanting.png" alt="Backyard Planting">
+        </div>
+    </section>
 
-  </body>
+    <section id="wp-dev" class="w-full md:w-2/3 mx-auto px-12 my-12">
+        <h3 style="font-weight: 700;" class="text-4xl font-semibold">👨🏽‍💻 WordPress Theme Development</h3>
+        <p style="font-weight: 500;" class="leading-7 mt-2">
+            Many WordPress themes are available on the web at very competitive prices. However, these themes are accessible to everyone and do not guarantee a personalized experience for your visitor. Your company/brand has a history, experience, and values, and these values must be present on your WordPress website to engage your visitor.
+            <br/>
+            So it makes sense to create a personalized identity and provide your users with a unique experience. This step will allow you to display a site close to your values and your image that respects UX good practices and modern visual identity.
+            <br/>
+            Let's work together on your next website and you will get a unique website, respecting the best practices of modern WordPress development, the recommendations of search engines as well as the guarantee of a secure digital image.
+            <ul class="leading-7">
+                <li class="text-2xl font-semibold mt-4" style="font-weight: 700;">💪 Powerful site</li>
+                <li>A fast and powerful site for your visitor's comfort and respecting good SEO practices.</li>
+    
+                <li class="text-2xl font-semibold mt-4" style="font-weight: 700;">👨🏻‍🎤 Unique Identity</li>
+                <li>A unique experience, personalized in line with your value proposition and your brand image, as well as an elegant and timeless design.</li>
+    
+                <li class="text-2xl font-semibold mt-4" style="font-weight: 700;">👌 Simple configuration</li>
+                <li>An administration panel that is optimized for your needs.</li>
+    
+                <li class="text-2xl font-semibold mt-4" style="font-weight: 700;">👨‍🏫 Respected best practices</li>
+                <li>A cleanly developed site for better performance and easy maintainability, you will be able to keep your site alive over time.</li>
+    
+                <li class="text-2xl font-semibold mt-4" style="font-weight: 700;">🔍 SEO friendly</li>
+                <li>Plug and play template that uses the latest search engine recommendations.</li>
+            </ul>
+        </p>
+    </section>
+    <section id="wp-plugin-dev" class="w-full md:w-2/3 mx-auto px-12 my-12">
+        <h3 style="font-weight: 700;" class="text-4xl font-semibold">⚙️ WordPress Plugin Development</h3>
+        <p style="font-weight: 500;" class="leading-7 mt-2">
+            Some requests sometimes are too specific to be fulfilled by just installing plugins available on the internet or on WordPress Plugin Directory. Therefore I'm here to help you building a plugin that meets your needs 100%.
+            <br/>
+            If you need to connect one of your tools to WordPress, or if you need to benefit from a new feature on your WordPress website, I am available to develop a custom plugin, easy to configure and meet the standards of the platform. The plugin will be powerful and developed according to modern development conventions.
+        </p>
+        <ul class="leading-7">
+            <li class="text-2xl font-semibold mt-4" style="font-weight: 700;">👩🏽‍🏭 Custom</li>
+            <li>A unique plugin developed specifically for you and answering your need(s)</li>
+
+            <li class="text-2xl font-semibold mt-4" style="font-weight: 700;">🤝 Compatibility</li>
+            <li>A plugin compatible with WordPress native features.</li>
+
+            <li class="text-2xl font-semibold mt-4" style="font-weight: 700;">👮 Security</li>
+            <li>Quality development that respects the security of your website.</li>
+
+            <li class="text-2xl font-semibold mt-4" style="font-weight: 700;">🚀 Performance</li>
+            <li>Your custom plugin will be optimized for WordPress, not to affect your website performance.</li>
+
+            <li class="text-2xl font-semibold mt-4" style="font-weight: 700;">🔧 Simple configuration</li>
+            <li>Easy to use, your WordPress plugin will be configurable to provide you with maximum autonomy.</li>
+        </ul>
+    </section>
+    <section id="tech-seo" class="w-full md:w-2/3 mx-auto px-12 my-12">
+        <h3 style="font-weight: 700;" class="text-4xl font-semibold">🎯 Technical SEO</h3>
+        <p style="font-weight: 500;" class="leading-7 mt-2">
+        Technical SEO may be a vital step within the whole SEO process. If there are problems with your technical SEO then it's likely that your SEO efforts won't generate the expected results.<br/>
+        It is thus crucial that you understand what's technical SEO and the way to get it right.
+        <br/>
+        The good news is that after a technical SEO audit of your website and fix any potential problems. You don't have to deal with them again.
+        <br/>
+        Technical SEO covers a wide range of techniques and strategies; all unique to each and every website. There are common areas of optimisation however each website varies. Some of the techniques any SEO consultant will look at are as followed:
+        </p>
+        <ul class="leading-7">
+            <li class="text-xl md:text-2xl font-semibold mt-4" style="font-weight: 700;">👩🏽‍🏭 Title Tag Optimization</li>
+            <li class="text-xl md:text-2xl font-semibold mt-4" style="font-weight: 700;">🤝 Image Alt Tag Optimization</li>
+            <li class="text-xl md:text-2xl font-semibold mt-4" style="font-weight: 700;">👮 URL Structure Analysis</li>
+            <li class="text-xl md:text-2xl font-semibold mt-4" style="font-weight: 700;">🚀 Page Load Time</li>
+            <li class="text-xl md:text-2xl font-semibold mt-4" style="font-weight: 700;">🌎 International targeting via correct hreflang implementation</li>
+            <li class="text-xl md:text-2xl font-semibold mt-4" style="font-weight: 700;">🚦 Canonical Tags for large eCommerce sites.</li>
+            <li class="text-xl md:text-2xl font-semibold mt-4" style="font-weight: 700;">🗂️ Google Structured Data</li>
+        </ul>
+        <p style="font-weight: 500;" class="leading-7 mt-2">
+            And many more...
+            <br/>
+            As a business owner I wouldn’t expect any of this lingo to be familiar to you. Nor does that even matter. It shouldn’t be your problem.
+        </p>
+    </section>
+
+    <footer class="flex flex-col items-center my-12">
+        <ul class="flex">
+            <li class="mr-4"><a href="#">Instaram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+        </ul>
+        <p class="mt-4">&copy; 2021 Youssef ELMZELJI / <a href="">privacy policy and terms</a></p>
+    </footer>
+</body>
 </html>
